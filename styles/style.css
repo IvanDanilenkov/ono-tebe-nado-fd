@@ -130,7 +130,6 @@ address {
   width: 256px;
   height: 51px;
   border: 1px solid #fff;
-  /* Белая рамка */
   color: #fff;
   font-size: 22px;
   text-transform: uppercase;
@@ -188,12 +187,12 @@ address {
   padding: 50px 39px;
   overflow: scroll;
   color: white;
+  background-position: center;
+  background-size: cover;
 }
 
 .card_type_film {
   background-image: url(../images/card-lot-01.jpg);
-  background-position: center;
-  background-size: cover;
 }
 
 .card-title {
@@ -221,14 +220,10 @@ address {
 
 .card_type_book {
   background-image: url(../images/card-lot-02.jpg);
-  background-position: center;
-  background-size: cover;
 }
 
 .card_type_picture {
   background-image: url(../images/card-lot-03.jpg);
-  background-position: center;
-  background-size: cover;
 }
 
 .lots__look-more-link {
@@ -281,11 +276,6 @@ address {
   height: 449px;
   margin-top: 140px;
   margin-bottom: 193px;
-}
-
-.about__column_text {
-  display: flex;
-  flex-direction: column;
 }
 
 .about__title {
