@@ -3,26 +3,25 @@
   grid-template-columns: 1fr min-content 1fr;
   align-items: center;
   width: 1100px;
-  height: 293px;
 }
 
 .header-menu {
   min-width: 392px;
   height: auto;
+  padding-bottom: 2px;
 }
 
 .header__links-list {
   display: flex;
   gap: 33px;
-  padding-bottom: 5px;
-  padding-left: 49px;
+  padding-left: 50px;
   font-size: 18px;
   line-height: 21px;
   list-style: circle;
 }
 
-.header__link {
-  text-decoration: underline;
+.header__links-list-item_no-bullit {
+  list-style: none;
 }
 
 .header__link_active {
@@ -30,8 +29,8 @@
 }
 
 .header__logo {
-  width: min-content;
-  height: auto;
+ padding-top: 92px;
+ padding-bottom: 93px;
 }
 
 .header__logo-link {
@@ -39,28 +38,26 @@
 }
 
 .header__logo-image {
-  width: 129.11px;
-  height: 104.65px;
+  width: 148px;
+  height: 105px;
 }
 
 .header__address {
-  justify-self: center;
-  padding-bottom: 8px;
-  padding-left: 105px;
+  justify-self: end;
+  padding-right: 87px;
+  padding-bottom: 3px;
 }
 
-address {
-  font-family: Raleway;
-  font-style: normal;
-  font-weight: 400;
+.address {
   font-size: 18px;
-  line-height: 24px;
+  font-style: normal;
+  line-height: 25px;
 }
 
 .cover {
   position: relative;
   width: 1100px;
-  height: 757px;
+  min-height: 757px;
   background-image: url(../images/cover.jpg);
   background-position: center;
   background-size: cover;
@@ -73,15 +70,15 @@ address {
   bottom: 0;
   left: 0;
   z-index: 1;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.6);
   background-size: cover;
 }
 
 .cover-title {
   position: relative;
   z-index: 2;
-  padding-top: 167px;
-  padding-left: 49px;
+  padding-top: 165px;
+  padding-left: 50px;
   color: #fff;
   font-weight: 700;
   font-size: 100px;
@@ -104,7 +101,7 @@ address {
 .aligned-text-right {
   display: block;
   padding-top: 20px;
-  padding-right: 21px;
+  padding-right: 20px;
   text-align: end;
 }
 
@@ -112,29 +109,29 @@ address {
   position: relative;
   z-index: 2;
   display: flex;
-  gap: 109px;
-  padding-top: 105px;
+  justify-content: space-between;
+  padding-top: 106px;
+  padding-right: 50px;
   padding-left: 50px;
   color: #fff;
   text-transform: uppercase;
 }
 
 .cover-description-text {
-  padding-top: 10px;
+  align-self: center;
   font-size: 22px;
   line-height: 28px;
-  word-spacing: 18px;
+  word-spacing: 18.5px;
 }
 
 .bet-button {
   width: 256px;
   height: 51px;
-  border: 1px solid #fff;
+  border: 1px solid currentColor;
   color: #fff;
   font-size: 22px;
   text-transform: uppercase;
   background-color: transparent;
-  transition: background-color 0.3s, color 0.3s;
   cursor: pointer;
 }
 
@@ -156,15 +153,14 @@ address {
   display: flex;
   flex-wrap: wrap;
   align-items: stretch;
-  list-style-type: none;
   gap: 25px;
   margin-top: 27px;
+  list-style-type: none;
 }
 
 .lots-card-list-item {
   display: flex;
   flex-direction: column;
-  flex-grow: 1;
   width: 334px;
   min-height: 596px;
 }
@@ -183,9 +179,7 @@ address {
   flex-direction: column;
   justify-content: space-between;
   height: 100%;
-  border-radius: 8px;
-  padding: 50px 39px;
-  overflow: scroll;
+  padding: 50px 40px;
   color: white;
   background-position: center;
   background-size: cover;
@@ -204,8 +198,6 @@ address {
   letter-spacing: 0%;
   text-decoration: underline;
   text-decoration-style: solid;
-  text-decoration-thickness: Auto;
-  text-underline-offset: Auto;
   text-transform: uppercase;
 }
 
@@ -215,7 +207,6 @@ address {
   font-weight: 400;
   font-size: 20px;
   line-height: 24px;
-  letter-spacing: 0%;
 }
 
 .card_type_book {
@@ -228,7 +219,7 @@ address {
 
 .lots__look-more-link {
   display: flex;
-  padding-top: 5px;
+  padding-top: 31px;
   padding-left: 39px;
   color: black;
   font-size: 20px;
@@ -242,8 +233,8 @@ address {
   grid-template-columns: 334px 1fr;
   align-items: start;
   gap: 25px;
-  margin-top: 114px;
-  padding: 0 24px;
+  margin-top: 120px;
+  padding: 0 24px 180px;
 }
 
 .about__column {
@@ -268,14 +259,11 @@ address {
 }
 
 .about__column_left {
-  padding-top: 40px;
-  padding-right: 2px;
+  margin-top: 34px;
 }
 
 .about__column_right {
-  height: 449px;
-  margin-top: 140px;
-  margin-bottom: 193px;
+  margin-top: 135px;
 }
 
 .about__title {
@@ -296,22 +284,12 @@ address {
 
 .footer {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-areas:
-  "address menu social-list";
-  height: 180px;
-  padding: 0 24px;
-}
-
-.footer__address {
-  grid-area: address;
-  width: 264px;
-  height: 98px;
-  padding-left: 25px;
+  grid-template-columns: 264px 1fr 1fr;
+  padding: 0 50px;
 }
 
 .footer__menu {
-  grid-area: menu;
+  padding:1px 0 115px 105px;
   text-align: center;
 }
 
@@ -327,10 +305,8 @@ address {
 
 .footer__social-list {
   display: flex;
-  grid-area: social-list;
   justify-content: flex-end;
   gap: 48px;
-  padding-right: 26px;
   list-style: none;
 }
 
